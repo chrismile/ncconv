@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+    "name": "ncconv",
+    "version": "0.1.0",
+    "dependencies": [
+        "netcdf-c"
+    ],
+    "features": {
+        "tbb": {
+            "description": "Use TBB instead of OpenMP for multi-threading",
+            "dependencies": [
+                "boost-core",
+                "boost-algorithm",
+                "boost-filesystem",
+                "tbb"
+            ]
+        }
+    }
+}
