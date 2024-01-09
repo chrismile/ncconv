@@ -56,6 +56,7 @@ int main(int argc, char *argv[]) {
             outputFile = argv[i];
         } else if (command == "--help" || command == "-h") {
             printHelp();
+            return 0;
         }
     }
 
